@@ -30,14 +30,14 @@ function getZenTaoContent() {
       const work = container.querySelector("[data-name='指派给我的任务']").getAttribute('data-url');
     
       fetch(
-        `http://192.168.71.212${bug}`,
+        `${ZENTAO_URL}${bug}`,
         (xhr) => {
           console.log('bug', bug, xhr.responseText);
         }
       );
     
       fetch(
-        `http://192.168.71.212${work}`,
+        `${ZENTAO_URL}${work}`,
         (xhr) => {
           console.log('work', work, xhr.responseText);
         }
