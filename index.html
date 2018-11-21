@@ -4,15 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>demo</title>
-  <script src="config/index.js"></script>
-  <script src="js/index.js"></script>
+  <link href="img/xiaoma.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <title>新标签页</title>
+  <link rel="stylesheet" href="css/normal.css" type="text/css"/>
+  <link rel="stylesheet" href="css/index.css" type="text/css"/>
 </head>
 <body>
-  <div>
-    首页在此
-    <button id="button">ddd</button>
-    <div id="content"></div>
-  </div>
+  <header>
+    <div class="left-header">
+      <img src="img/xiaoma.png">
+      <span>小马</span>
+    </div>
+    <!-- <div class="right-header">
+      <span>在新标签页显示</span>
+      <div class="switch"></div>
+    </div> -->
+  </header>
+  <nav class="nav">
+      <span class="nav-button active" id="nav-one">动态</span>
+      <span>/</span>
+      <span class="nav-button" id="nav-two">常用</span>
+      <span>/</span>
+      <span class="nav-button" id="nav-three">导航</span>
+  </nav>
+  <!-- 第一部分 -->
+  <selection class="container active" id="container-one">
+    <div class="zentao-content">
+      <div class="zentao-item-content">
+        <div class="zentao-header">
+          <span class="zentao-header-text">指派给我的bug</span>
+        </div>
+        <div class="zentao-bug"></div>
+      </div>
+      <div class="zentao-item-content">
+        <div class="zentao-header">
+          <span class="zentao-header-text">最新动态</span>
+        </div>
+        <div class="zentao-work"></div>
+      </div>
+    </div>
+    <div class="confluence-content">
+      <div class="confluence-header">
+        <span class="confluence-header-text">confluence</span>
+        <span class="confluence-header-button">
+          <span class="confluence-button active" id="confluence-header-button-1">热门</span>
+          <span class="confluence-button" id="confluence-header-button-2">更新</span>
+        </span>
+      </div>
+      <div class="confluence"></div>
+    </div>
+    <div class="gitee-content">
+      <div class="gitee-header">
+        <span class="gitee-header-text">码云</span>
+      </div>
+      <div class="gitee"></div>
+    </div>
+  </selection>
+  <!-- 第二部分 -->
+  <selection class="container" id="container-two">
+    <div class="left-menu">
+      <ul>
+        <li><a href="#swagger">swagger</a></li>
+        <li><a href="#tapd">TAPD</a></li>
+        <li><a href="#aliyun">阿里云</a></li>
+        <li><a href="#test">测试环境</a></li>
+        <li><a href="#demo">演示环境</a></li>
+        <li><a href="#component">组件库</a></li>
+      </ul>
+    </div>
+    <div class="right-content">
+      <div class="right-content-item">
+        <div class="right-content-header" name="swagger">swagger</div>
+        <div class="content-cards" id="swagger"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="tapd">TAPD</div>
+        <div class="content-cards" id="tapd"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="aliyun">阿里云</div>
+        <div class="content-cards" id="aliyun"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="test">测试环境</div>
+        <div class="content-cards" id="test"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="demo">演示环境</div>
+        <div class="content-cards" id="demo"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="component">组件库</div>
+        <div class="content-cards" id="component"></div>
+      </div>
+    </div>
+  </selection>
+  <!-- 第三部分 -->
+  <selection class="container" id="container-three">
+    <div class="left-menu">
+      <ul>
+        <li><a href="#floor_1">社区论坛</a></li>
+        <li><a href="#floor_2">框架类库</a></li>
+        <li><a href="#floor_3">状态管理</a></li>
+        <li><a href="#floor_4">第三方类库</a></li>
+        <li><a href="#floor_5">构建工具</a></li>
+        <li><a href="#floor_6">客户端开发</a></li>
+        <li><a href="#floor_7">学习手册</a></li>
+        <li><a href="#floor_8">CSS相关</a></li>
+        <li><a href="#floor_9">node相关</a></li>
+        <li><a href="#floor_10">字体图标</a></li>
+        <li><a href="#floor_11">IDE</a></li>
+        <li><a href="#floor_12">在线工具</a></li>
+      </ul>
+    </div>
+    <div class="right-content">
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_1">社区论坛</div>
+        <div class="content-cards" id="floor_1"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_2">框架类库</div>
+        <div class="content-cards" id="floor_2"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_3">状态管理</div>
+        <div class="content-cards" id="floor_3"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_4">第三方类库</div>
+        <div class="content-cards" id="floor_4"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_5">构建工具</div>
+        <div class="content-cards" id="floor_5"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_6">客户端开发</div>
+        <div class="content-cards" id="floor_6"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_7">学习手册</div>
+        <div class="content-cards" id="floor_7"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_8">CSS相关</div>
+        <div class="content-cards" id="floor_8"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_9">node相关</div>
+        <div class="content-cards" id="floor_9"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_10">字体图标</div>
+        <div class="content-cards" id="floor_10"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_11">IDE</div>
+        <div class="content-cards" id="floor_11"></div>
+      </div>
+      <div class="right-content-item">
+        <div class="right-content-header" name="floor_1">在线工具</div>
+        <div class="content-cards" id="floor_12"></div>
+      </div>
+    </div>
+  </selection>
+  <footer>
+    <div>footer</div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="config/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

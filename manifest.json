@@ -1,13 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "demo",
+  "name": "小马",
   "version": "1.0.0",
-
+  "author": "yuan.wei",
+  "description": "小马扩展工具",
+  "icons": {
+    "16": "img/xiaoma.png",
+    "48": "img/xiaoma.png",
+    "128": "img/xiaoma.png"
+  },
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    // "newtab": "index.html"  // 覆盖浏览器默认的新标签页
   },
   "browser_action": {
-    "default_icon": "img/icon.png"
+    "default_icon": "img/xiaoma.png"
   },
   "background": {
     "scripts": [
