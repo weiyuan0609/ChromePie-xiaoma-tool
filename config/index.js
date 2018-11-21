@@ -90,7 +90,7 @@ const TAPD_URLS = {
 
 // aliyun
 const ALIYUN_URLS = {
-  name: '日志查看（用户名：logger, 密码：Casstime88*）',
+  name: '日志查看',
   img: 'img/aliyun.png',
   url: 'https://sls.console.aliyun.com/?spm=5176.10560872.1.1.105234c0y4r26I#/',
 }
