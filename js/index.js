@@ -213,6 +213,7 @@ function getThreeContent() {
   getContent('floor_10', FONT);
   getContent('floor_11', IDE);
   getContent('floor_12', ONLINE_TOOL);
+  getContent('floor_13', STANDARD);
 }
 
 /**
