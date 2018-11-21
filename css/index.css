@@ -364,3 +364,9 @@ header img{
 .login-button:hover{
   color: #eb3136;
 }
+footer{
+  background-color: #eceff1;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
