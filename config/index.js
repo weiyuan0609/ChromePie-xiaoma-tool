@@ -251,7 +251,7 @@ const OTHER_FRAME = [
   },
   {
     name: 'React Navigation',
-    imag: '',
+    img: '',
     url: 'https://reactnavigation.org/zh-Hans/'
   }
 ];
