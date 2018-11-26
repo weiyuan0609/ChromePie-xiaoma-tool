@@ -248,6 +248,11 @@ const OTHER_FRAME = [
     name: 'Lodash',
     img: 'img/lodash.png',
     url: 'https://www.lodashjs.com/'
+  },
+  {
+    name: 'React Navigation',
+    imag: '',
+    url: 'https://reactnavigation.org/zh-Hans/'
   }
 ];
 
