@@ -90,7 +90,7 @@ const TAPD_URLS = {
 
 // aliyun
 const ALIYUN_URLS = {
-  name: '日志查看',
+  name: '日志查看（用户名：logger, 密码：Casstime88*）',
   img: 'img/aliyun.png',
   url: 'https://sls.console.aliyun.com/?spm=5176.10560872.1.1.105234c0y4r26I#/',
 }
@@ -291,6 +291,11 @@ const STUDY_BOOK = [
     name: 'flex 布局',
     img: '',
     url: 'http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html'
+  },
+  {
+    name: 'hapi小书',
+    img: 'img/hapi.png',
+    url: 'http://www.tup.tsinghua.edu.cn/upload/books/yz/075002-01.pdf'
   }
 ];
 
