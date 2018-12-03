@@ -78,6 +78,11 @@ const SWAGGER_URLS = [
     name: '询价服务',
     img: 'img/swagger.png',
     url: 'http://192.168.29.218:8888/pages/viewpage.action?pageId=1998850',
+  },
+  {
+    name: 'terminal服务',
+    img: 'img/swagger.png',
+    url: 'http://192.168.71.86:10030/documentation#!/companies/getCompaniesCompanyid',
   }
 ];
 
