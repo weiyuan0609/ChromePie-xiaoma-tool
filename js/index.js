@@ -191,29 +191,35 @@ function getGiteeContent() {
   );
 }
 
+function getMenuPage(menuConfig, pageId) {
+  const leftMenus = menuConfig.map(item => {
+    return `<li><a href="#${item.title}">${item.name}</a></li>`;
+  });
+  for (let j = 0; j < leftMenus.length; j++) {
+    document.querySelector(`#${pageId} .left-menu ul`).innerHTML += leftMenus[j];
+  }
+  const rightContents = menuConfig.map(item => {
+    return `
+      <div class="right-content-item">
+        <div class="right-content-header" name="${item.title}">${item.name}</div>
+        <div class="content-cards" id="${item.title}">
+          ${getContent(item.title, item.urls)}
+        </div>
+      </div>
+    `
+  });
+  for (let j = 0; j < rightContents.length; j++) {
+    document.querySelector(`#${pageId} .right-content`).innerHTML += rightContents[j];
+  }
+}
+
 function getTwoContent() {
-  getContent('swagger', SWAGGER_URLS);
-  getContent('tapd', TAPD_URLS);
-  getContent('test', TEST_URLS);
-  getContent('demo', DEMO_URLS);
-  getContent('aliyun', ALIYUN_URLS);
-  getContent('component', COMPONENT_URLS);
+  getMenuPage(TWO_PAGE_MENU, 'container-two');
 }
 
 function getThreeContent() {
-  getContent('floor_1', COMMUNITY);
-  getContent('floor_2', FRAME);
-  getContent('floor_3', STATE);
-  getContent('floor_4', OTHER_FRAME);
-  getContent('floor_5', BUILD);
-  getContent('floor_6', CLIENT);
-  getContent('floor_7', STUDY_BOOK);
-  getContent('floor_8', CSS_TOOLS);
-  getContent('floor_9', NODE);
-  getContent('floor_10', FONT);
-  getContent('floor_11', IDE);
-  getContent('floor_12', ONLINE_TOOL);
-  getContent('floor_13', STANDARD);
+  getMenuPage(THREE_PAGE_MENU, 'container-three');
+
 }
 
 /**
@@ -232,13 +238,9 @@ function getContent(id, obj) {
         </a>
       `
     });
-    for (let j = 0; j < result.length; j++) {
-      document.querySelector(`#${id}`).innerHTML += result[j];
-    }
-    return;
+    return result.join('');
   }
-
-  document.querySelector(`#${id}`).innerHTML = `
+  return `
     <a href="${obj.url}" target="_blank">
       <div class="content-cards-item">
         <img src="${obj.img}"/>
