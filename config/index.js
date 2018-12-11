@@ -103,7 +103,7 @@ const TWO_PAGE_MENU = [
     title: 'aliyun',
     name: '阿里云',
     urls: {
-      name: '日志查看',
+      name: '日志查看（用户名：logger, 密码：Casstime88*）',
       img: 'img/aliyun.png',
       url: 'https://sls.console.aliyun.com/?spm=5176.10560872.1.1.105234c0y4r26I#/',
     }
@@ -356,6 +356,11 @@ const THREE_PAGE_MENU = [
         name: '函数式编程',
         img: '',
         url: 'https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/'
+      },
+      {
+        name: 'React Native动画',
+        img: '',
+        url: 'https://future-challenger.gitbooks.io/react-native-animation/content/'
       }
     ]
   },
