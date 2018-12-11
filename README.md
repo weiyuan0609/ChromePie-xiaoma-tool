@@ -2,6 +2,8 @@
 小马工具chrome插件
 
 效果如下：
+![step one](img/readme-1.png)
+![step two](img/readme-2.png)
 ![step three](img/readme-3.png)
 
 使用方式:
