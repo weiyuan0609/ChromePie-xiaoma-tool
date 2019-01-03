@@ -1,5 +1,5 @@
-const ZENTAO_URL = 'http://192.168.71.212';
-const CONFLUENCE_URL = 'http://192.168.29.218:8888';
+const ZENTAO_URL = 'http://10.118.71.212';
+const CONFLUENCE_URL = 'http://10.118.71.218:8888';
 const GITEE_URL = 'https://gitee.com';
 
 // two page Menu
@@ -8,6 +8,11 @@ const TWO_PAGE_MENU = [
     title: 'swagger',
     name: 'swagger',
     urls: [
+      {
+        name: '认证服务',
+        img: 'img/swagger.png',
+        url: 'http://test-api.intra.casstime.com/agreement-service/swagger-ui.html#/'
+      },
       {
         name: '活动服务',
         img: 'img/swagger.png',
