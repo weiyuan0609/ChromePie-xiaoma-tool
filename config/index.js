@@ -86,7 +86,7 @@ const TWO_PAGE_MENU = [
       {
         name: '询价服务',
         img: 'img/swagger.png',
-        url: 'http://192.168.29.218:8888/pages/viewpage.action?pageId=1998850',
+        url: 'http://10.118.71.218:8888/pages/viewpage.action?pageId=1998850',
       },
       {
         name: 'terminal服务',
