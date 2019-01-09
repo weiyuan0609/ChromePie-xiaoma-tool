@@ -91,7 +91,7 @@ const TWO_PAGE_MENU = [
       {
         name: 'terminal服务',
         img: 'img/swagger.png',
-        url: 'http://192.168.71.86:10030/documentation#!/companies/getCompaniesCompanyid',
+        url: 'http://10.118.71.86:10030/documentation#!/companies/getCompaniesCompanyid',
       }
     ]
   },
