@@ -57,7 +57,7 @@ function getConfluenceContent() {
 
 function getConfluenceNewContent() {
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", `${CONFLUENCE_URL}/rest/dashboardmacros/1.0/updates`, true);
+  xhr.open("GET", `${CONFLUENCE_URL}/rest/dashboardmacros/1.0/updates?maxResults=40&tab=all&showProfilePic=true&labels=&spaces=&users=&types=&category=&spaceKey=`, true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       const resp = JSON.parse(xhr.responseText);

@@ -127,9 +127,10 @@
   line-height: 22px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .confluence-right{
-  width: 100%;
+  width: 89%;
 }
 .confluence-right-p{
   display: flex;

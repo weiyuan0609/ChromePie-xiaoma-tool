@@ -1,5 +1,5 @@
 const ZENTAO_URL = 'http://10.118.71.212';
-const CONFLUENCE_URL = 'http://10.118.71.218:8888';
+const CONFLUENCE_URL = 'http://10.118.71.244:8888';
 const GITEE_URL = 'https://gitee.com';
 
 // two page Menu
@@ -108,7 +108,7 @@ const TWO_PAGE_MENU = [
     title: 'aliyun',
     name: '阿里云',
     urls: {
-      name: '日志查看（用户名：logger, 密码：Casstime88*）',
+      name: '日志查看',
       img: 'img/aliyun.png',
       url: 'https://sls.console.aliyun.com/?spm=5176.10560872.1.1.105234c0y4r26I#/',
     }
